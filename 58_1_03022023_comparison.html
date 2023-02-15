@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>58_1_03022023</title>
+    <style>
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .pl {
+            padding-left: 1rem;
+        }
+
+        .flex-nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .place-c {
+            place-content: center;
+        }
+
+        .gap-1 {
+            gap: 1rem;
+        }
+
+        .card {
+            border-width: 1px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border-radius: 0.25rem; /* 4px */
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            flex: 0 1 auto;
+            width: 500px;
+        }
+
+        .card-title {
+            background-color: #0c4a6e;
+            color: white;
+            width: 100%;
+            height: 50%;
+            border-radius: 0.25rem 0.25rem 0 0; /* 4px */
+
+        }
+
+        .card-body {
+            border-style: solid;
+            border-width: 0 0 1px 0;
+            border-color: slategray;
+            padding: 10px 2px;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .abs_center {
+            position: absolute;
+            top: 50vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .text_bold {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body class="relative">
+<header></header>
+<div class="row flex-nowrap gap-1 abs_center">
+    <div class="card">
+        <div class="card-title">
+            <p class="py-05 pl">
+                Google voice
+            </p>
+        </div>
+        <div class="card-body">
+            <table>
+                <tr>
+                    <td class="text_bold">Device:</td>
+                    <td>iPhone 12</td>
+                </tr>
+                <tr>
+                    <td class="text_bold">Result id:</td>
+                    <td>58_1_03022023_G.mp3</td>
+                </tr>
+            </table>
+        </div>
+        <iframe
+                frameborder="0"
+                width="100%"
+                height="60"
+                src="https://drive.google.com/file/d/14z5GxNE6EP68iLzUPdn_qDkeDxJ94rpj/preview"
+        >
+        </iframe>
+    </div>
+
+    <div class="card">
+        <div class="card-title">
+            <p class="py-05 pl">
+                Mapbox voice
+            </p>
+        </div>
+        <div class="card-body">
+            <table>
+                <tr>
+                    <td class="text_bold">Device:</td>
+                    <td>iPhone 13 mini</td>
+                </tr>
+                <tr>
+                    <td class="text_bold">Result id:</td>
+                    <td>58_1_03022023_M.mp3</td>
+                </tr>
+            </table>
+        </div>
+        <iframe
+                frameborder="0"
+                width="100%"
+                height="60"
+                src="https://drive.google.com/file/d/151SJosGZmNhwS2dYx6FYCEqzAOIeGZ6-/preview"
+        >
+        </iframe>
+    </div>
+</div>
+</body>
+</html>
